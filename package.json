@@ -16,6 +16,7 @@
     "fmt": "prettier --write .",
     "fmt.check": "prettier --check .",
     "lint": "eslint \"src/**/*.ts*\"",
+    "prebuild.pandacss": "panda codegen --silent",
     "preview": "qwik build preview && vite preview --open",
     "start": "vite --open --mode ssr",
     "qwik": "qwik"
@@ -23,7 +24,11 @@
   "devDependencies": {
     "@builder.io/qwik": "^1.2.2",
     "@builder.io/qwik-city": "^1.2.2",
+    "@builder.io/vite-plugin-macro": "~0.0.6",
+    "@faker-js/faker": "^8.0.2",
+    "@pandacss/dev": "^0.4.0",
     "@types/eslint": "8.40.2",
+    "@types/lodash": "^4.14.195",
     "@types/node": "^20.3.1",
     "@typescript-eslint/eslint-plugin": "5.60.0",
     "@typescript-eslint/parser": "5.60.0",
@@ -34,5 +39,10 @@
     "undici": "5.22.1",
     "vite": "4.3.9",
     "vite-tsconfig-paths": "4.2.0"
+  },
+  "dependencies": {
+    "@modular-forms/qwik": "^0.18.1",
+    "lodash": "^4.17.21",
+    "zustand": "^4.3.8"
   }
 }
